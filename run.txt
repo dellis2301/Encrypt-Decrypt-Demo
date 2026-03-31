@@ -1,0 +1,35 @@
+=== SYMMETRIC ENCRYPTION (AES - Fernet) ===
+
+KEY USED:
+b'example_key_here'
+
+INPUT:
+b'Hello, this is a secret message!'
+
+ENCRYPTED OUTPUT:
+b'gAAAAAB...'
+
+DECRYPTED OUTPUT:
+b'Hello, this is a secret message!'
+
+
+=== ASYMMETRIC ENCRYPTION (RSA) ===
+
+PUBLIC KEY:
+-----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqh...
+-----END PUBLIC KEY-----
+
+PRIVATE KEY:
+-----BEGIN RSA PRIVATE KEY-----
+MIIEpAIBAAKCA...
+-----END RSA PRIVATE KEY-----
+
+INPUT:
+b'Hello, this is a secret message!'
+
+ENCRYPTED OUTPUT:
+b'\x93\xaf...'
+
+DECRYPTED OUTPUT:
+b'Hello, this is a secret message!'
